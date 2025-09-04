@@ -5,4 +5,8 @@ export default {
   component: HomePage,
 };
 
-export const Default = {};
+export const Default = {
+  args: {
+    onStart: () => alert("Spelet startar!"),
+  },
+};

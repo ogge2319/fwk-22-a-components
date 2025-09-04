@@ -1,12 +1,26 @@
 import React from "react";
 import Button from "../Button/Button";
 
-export default function HomePage() {
+export default function HomePage({ onStart }) {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-900 to-gray-700 text-white">
-      <h1 className="text-5xl font-bold mb-6">Välkommen till Gomoku</h1>
-      <p className="mb-8 text-lg text-gray-300">Fem-i-rad som komponenter!</p>
-      <Button onClick={() => alert("Spelet startar!")}>Starta Spelet</Button>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        minHeight: "100vh",
+        background: "linear-gradient(to bottom, #1f2937, #374151)",
+        color: "white",
+        textAlign: "center",
+        gap: "1rem",
+      }}
+    >
+      <h1 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>Välkommen till Gomoku</h1>
+      <p style={{ fontSize: "1.25rem", color: "#d1d5db" }}>
+        Fem-i-rad spelet byggt som komponenter!
+      </p>
+      <Button onClick={onStart}>Starta Spelet</Button>
     </div>
   );
 }
