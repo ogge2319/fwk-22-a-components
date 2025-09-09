@@ -11,10 +11,21 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
-  "dependencies": {
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+
+  "main": "src/components/index.js",
+  "module": "src/components/index.js",
+  "exports": {
+    ".": "./src/components/index.js"
   },
+  "files": ["src"],
+
+  "dependencies": {},
+
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.1",
     "@eslint/js": "^9.33.0",
