@@ -7,17 +7,17 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s;
-    
+
     /* Cross-browser reset */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    
+
     /* Focus styling reset */
     outline: none;
     -webkit-outline: none;
     -moz-outline: none;
-    
+
     /* Remove default styling */
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
@@ -28,7 +28,7 @@
     .button {
         -moz-outline: none;
     }
-    
+
     .button::-moz-focus-inner {
         border: 0;
         padding: 0;
