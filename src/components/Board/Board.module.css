@@ -8,49 +8,13 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(15, 25px);
-    grid-template-rows: repeat(15, 25px);
+    grid-template-columns: repeat(15, 35px);
+    grid-template-rows: repeat(15, 35px);
     gap: 0px;
     position: relative;
     background-image:
-        repeating-linear-gradient(0deg, #8B7355, #8B7355 1px, transparent 1px, transparent 25px),
-        repeating-linear-gradient(90deg, #8B7355, #8B7355 1px, transparent 1px, transparent 25px);
-    background-size: 25px 25px;
-    background-position: 12.5px 12.5px;
-}
-
-/* Safari/WebKit specific grid lines */
-@supports (-webkit-appearance: none) {
-    .grid {
-        background-image:
-            repeating-linear-gradient(0deg, #8B7355 0px, #8B7355 1px, transparent 1px, transparent 25px),
-            repeating-linear-gradient(90deg, #8B7355 0px, #8B7355 1px, transparent 1px, transparent 25px);
-        background-size: 25px 25px;
-        background-position: 12.5px 12.5px;
-        -webkit-background-size: 25px 25px;
-        background-repeat: repeat;
-    }
-}
-
-/* Alternative grid lines for Safari if gradients don't work */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    .grid::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image:
-            repeating-linear-gradient(to right, transparent 0px, transparent 12px, #8B7355 12px, #8B7355 13px, transparent 13px, transparent 25px),
-            repeating-linear-gradient(to bottom, transparent 0px, transparent 12px, #8B7355 12px, #8B7355 13px, transparent 13px, transparent 25px);
-        background-size: 25px 25px;
-        pointer-events: none;
-        z-index: 1;
-    }
-
-    .grid>* {
-        position: relative;
-        z-index: 2;
-    }
+        repeating-linear-gradient(0deg, #8B7355, #8B7355 1px, transparent 1px, transparent 35px),
+        repeating-linear-gradient(90deg, #8B7355, #8B7355 1px, transparent 1px, transparent 35px);
+    background-size: 35px 35px;
+    background-position: 17.5px 17.5px;
 }

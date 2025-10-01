@@ -7,3 +7,5 @@ export { default as GameStatus } from "../components/GameStatus/GameStatus.jsx";
 export { default as Header } from "../components/Header/Header.jsx";
 export { default as HomePage } from "../components/HomePage/HomePage.jsx";
 export { default as ScoreBoard } from "../components/ScoreBoard/ScoreBoard.jsx";
+export { default as Modal } from "../components/Modal/Modal.jsx";
+export { default as AboutModal } from "../components/AboutModal/AboutModal.jsx";

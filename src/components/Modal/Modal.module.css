@@ -1,0 +1,89 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+}
+
+.modal {
+    background-color: #DEB887;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    color: #654321;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.closeButton {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #654321;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+.closeButton:hover {
+    background-color: rgba(101, 67, 33, 0.1);
+}
+
+.closeButton:focus {
+    outline: none;
+    background-color: rgba(101, 67, 33, 0.15);
+}
+
+.content {
+    line-height: 1.6;
+}
+
+.content h1 {
+    color: #654321;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content h2 {
+    color: #654321;
+    margin: 20px 0 12px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content p {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.content ul {
+    margin: 12px 0;
+    padding-left: 20px;
+}
+
+.content li {
+    margin-bottom: 6px;
+    font-size: 14px;
+}

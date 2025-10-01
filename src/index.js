@@ -7,6 +7,8 @@ export { default as GameStatus } from './components/GameStatus/GameStatus';
 export { default as Header } from './components/Header/Header';
 export { default as HomePage } from './components/HomePage/HomePage';
 export { default as ScoreBoard } from './components/ScoreBoard/ScoreBoard';
+export { default as Modal } from './components/Modal/Modal';
+export { default as AboutModal } from './components/AboutModal/AboutModal';
 
 export { default as GameStatusFromContext } from './components/GameStatus/GameStatus.fromContext';
 export { default as HeaderFromContext } from './components/Header/Header.fromContext';
