@@ -1,6 +1,6 @@
 {
   "name": "@hodmanliban/gomoku-components",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "type": "module",
   "private": false,
   "main": "dist/index.cjs",
