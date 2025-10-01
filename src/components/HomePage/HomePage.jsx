@@ -16,11 +16,11 @@ export default function HomePage({ onStart }) {
         gap: "1rem",
       }}
     >
-      <h1 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>Välkommen till Gomoku</h1>
+      <h1 style={{ fontSize: "2.5rem", fontWeight: "bold" }}>Welcome to Gomoku</h1>
       <p style={{ fontSize: "1.25rem", color: "#d1d5db" }}>
-        Fem-i-rad spelet byggt som komponenter!
+        Five in a row – simple rules, endless strategy.
       </p>
-      <Button onClick={onStart}>Starta Spelet</Button>
+      <Button onClick={onStart}>Start game</Button>
     </div>
   );
 }
