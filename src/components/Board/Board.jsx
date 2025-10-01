@@ -1,11 +1,12 @@
 import React from "react";
-import { useGame } from "../../mocks/gameProvider.mock";
 import Cell from "../Cell/Cell";
 import styles from "./Board.module.css";
 
-export default function Board() {
-  const { board, placeMark } = useGame();
-
+export default function Board({
+  board = Array(225).fill(""),
+  onCellClick = () => { },
+  size = 15
+}) {
   return (
     <div className={styles.board}>
       <div className={styles.grid}>
@@ -13,7 +14,7 @@ export default function Board() {
           <Cell
             key={index}
             value={cell ?? ""}
-            onClick={() => placeMark(index)}
+            onClick={() => onCellClick(index)}
           />
         ))}
       </div>
