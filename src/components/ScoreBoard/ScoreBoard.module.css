@@ -105,24 +105,13 @@
 /* Firefox specific reset */
 @-moz-document url-prefix() {
     .button {
-        -moz-outline: none !important;
-        outline: none !important;
-        -moz-appearance: none;
-        background-color: #D2B48C !important;
-        border: none !important;
+        -moz-outline: none;
+        outline: none;
     }
 
     .button::-moz-focus-inner {
-        border: 0 !important;
-        padding: 0 !important;
-        outline: none !important;
-    }
-    
-    .button:focus {
-        outline: none !important;
-        -moz-outline: none !important;
-        box-shadow: inset 0 0 0 2px rgba(101, 67, 33, 0.3) !important;
-        background-color: #C4A376 !important;
+        border: 0;
+        padding: 0;
     }
 }
 
