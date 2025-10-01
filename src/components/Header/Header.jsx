@@ -1,17 +1,17 @@
 import React from "react";
+import styles from "./Header.module.css";
 
-export default function Header({ currentPlayer = "X" }) {
+export default function Header({ currentPlayer = "X", winner = null }) {
+  if (winner) {
+    return (
+      <header className={styles.header}>
+        Spelare {winner} vann!
+      </header>
+    );
+  }
+
   return (
-    <header
-      style={{
-        padding: "1rem",
-        background: "#111827",
-        color: "white",
-        fontSize: "1.5rem",
-        fontWeight: "bold",
-        textAlign: "center",
-      }}
-    >
+    <header className={styles.header}>
       Tur: Spelare {currentPlayer}
     </header>
   );

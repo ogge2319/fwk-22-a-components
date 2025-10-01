@@ -1,6 +1,9 @@
+import React from "react";
+import styles from "./Cell.module.css";
+
 export default function Cell({ value = "", onClick }) {
   return (
-    <button onClick={onClick} style={{ width: "40px", height: "40px" }}>
+    <button className={styles.cell} onClick={onClick}>
       {value}
     </button>
   );

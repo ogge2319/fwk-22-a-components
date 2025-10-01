@@ -1,0 +1,21 @@
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #F4E4BC;
+    border: 1px solid #8B7355;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #654321;
+}
+
+.cell:hover {
+    background-color: #E6D4A7;
+}
+
+.cell:active {
+    background-color: #D2B48C;
+}

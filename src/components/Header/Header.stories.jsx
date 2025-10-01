@@ -7,20 +7,28 @@ export default {
 
 export const Default = {
     args: {
-        currentPlayer: "X", 
+        currentPlayer: "X",
     },
 };
 
 export const O = {
     args: {
-        currentPlayer: "O", 
+        currentPlayer: "O",
     },
 };
 
-export const Winner = {
+export const WinnerX = {
     args: {
-        currentPlayer: "🎉 Spelare X vann!",
+        currentPlayer: "O",
+        winner: "X",
     },
-}; 
+};
+
+export const WinnerO = {
+    args: {
+        currentPlayer: "X",
+        winner: "O",
+    },
+};
 
 
