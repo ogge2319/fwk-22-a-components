@@ -7,12 +7,52 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s;
+    
+    /* Cross-browser reset */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    /* Focus styling reset */
+    outline: none;
+    -webkit-outline: none;
+    -moz-outline: none;
+    
+    /* Remove default styling */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+/* Firefox specific reset */
+@-moz-document url-prefix() {
+    .button {
+        -moz-outline: none;
+    }
+    
+    .button::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+}
+
+/* Safari/WebKit specific reset */
+@supports (-webkit-appearance: none) {
+    .button {
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: transparent;
+    }
 }
 
 .button:hover {
     background-color: #C4A376;
 }
 
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(212, 180, 140, 0.5);
+}
+
 .button:active {
     background-color: #B8966A;
+    transform: scale(0.98);
 }
